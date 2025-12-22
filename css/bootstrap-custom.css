@@ -368,19 +368,23 @@
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.4);
-    z-index: 1;
+    z-index: 0;
 }
 .hero-section .hero-content h2 {
-    color: #1a1a1a;
+    color: #ffffff;
     line-height: 1.3;
 }
 .hero-section .lead {
-    color: #555;
+    color: #ffffff;
     font-size: 1.1rem;
     line-height: 1.7;
+    
 }
 .hero-image-wrapper img {
-    animation: floatImage 6s ease-in-out infinite;
+    height:28rem;
+    
+    
+    animation: floatImage 5s ease-in-out 0.2s ;
 }
 .hero-image-wrapper:hover img {
     animation-play-state: paused;
@@ -415,35 +419,27 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    opacity: 0; /* start hidden; animations will toggle opacity */
-    z-index: 1;
+    opacity: 75; /* start hidden; animations will toggle opacity */
+    z-index: 0;
 }
 
 .hero-bg-1 {
     background-image: url('../img/cassava-farming.jpg');
     /* longer duration for a smoother, slower slide */
-    animation: slideBackground 18s ease-in-out 0s infinite;
-    animation-fill-mode: both;
-}
-
-.hero-bg-2 {
-    background-image: url('../img/plantain-farming.jpg');
-    /* start halfway through so the two backgrounds alternate */
-    animation: slideBackground 18s ease-in-out 9s infinite;
-    animation-fill-mode: both;
+    
 }
 
 
 
 .hero-content {
     position: relative;
-    z-index: 3;
+    z-index: 0;
 }
 
 .hero-title {
     font-weight: 700;
     line-height: 1.3;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(94, 93, 93, 0.5);
     margin-bottom: 1.5rem;
 }
 
@@ -455,7 +451,7 @@
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.95);
     line-height: 1.8;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(252, 251, 251, 0.5);
     max-width: 700px;
     margin: 0 auto 2rem;
     font-weight: 300;
