@@ -1,0 +1,265 @@
+/* ============================================
+   Contact Page Styles
+   ============================================ */
+
+/* Contact Info Section */
+.contact-info-section {
+    background: #f9f9f9;
+    padding: 60px 0;
+}
+
+.contact-info-card {
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.contact-info-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.info-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: rgba(108, 190, 3, 0.1);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.info-icon svg {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-info-card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin-bottom: 15px;
+}
+
+.contact-info-card p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.contact-info-card a {
+    color: #6cbe03;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info-card a:hover {
+    color: #5a9f02;
+}
+
+/* Map Section */
+.map-section {
+    padding: 0;
+    margin: 40px 0;
+}
+
+.map-section iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    background: #f9f9f9;
+    padding: 60px 0;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form .form-control {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+    border-color: #6cbe03;
+    box-shadow: 0 0 0 0.2rem rgba(108, 190, 3, 0.25);
+}
+
+.contact-form .form-control::placeholder {
+    color: #999;
+}
+
+.contact-form textarea.form-control {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form .btn {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.contact-form .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(108, 190, 3, 0.3);
+}
+
+#success {
+    margin-bottom: 30px;
+}
+
+#success .alert {
+    border-radius: 4px;
+    padding: 16px 20px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .contact-info-section {
+        padding: 40px 0;
+    }
+
+    .contact-info-card {
+        padding: 30px 20px;
+        margin-bottom: 20px;
+    }
+
+    .contact-form-section {
+        padding: 40px 0;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+    .contact-form .form-control {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .contact-form textarea.form-control {
+        min-height: 120px;
+    }
+
+    .info-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .info-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact-info-card h4 {
+        font-size: 16px;
+    }
+
+    .contact-info-card p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-form {
+        padding: 15px;
+    }
+
+    .contact-form .row {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .contact-form .col-md-6,
+    .contact-form .col-12 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .contact-info-card {
+        padding: 25px 15px;
+    }
+
+    .info-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .info-icon svg {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-info-card {
+    animation: slideUp 0.6s ease;
+}
+
+.contact-form {
+    animation: slideUp 0.6s ease 0.2s backwards;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.text-dark {
+    color: #1d1d1d;
+}
+
+.text-muted {
+    color: #999;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-2 {
+    margin-bottom: 8px;
+}
+
+.mb-3 {
+    margin-bottom: 16px;
+}
+
+.mb-4 {
+    margin-bottom: 24px;
+}
+
+.mt-3 {
+    margin-top: 16px;
+}

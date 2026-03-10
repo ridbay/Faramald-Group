@@ -282,3 +282,26 @@ position: absolute;
                         height: 18px;
                         fill: #000; /* Black icon on white circle */
                     }
+
+/* Footer alignment helpers for logo, address and socials */
+.footer .footer-left {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+.footer .footer-left .footer-logo-img {
+	display: block;
+	margin-bottom: 8px;
+}
+.footer .footer-address {
+	color: #ffffff;
+	margin-bottom: 12px;
+}
+@media (max-width: 767px) {
+	.footer .footer-left {
+		align-items: center;
+		text-align: center;
+	}
+	.footer .footer-left .social-icons { margin-top: 10px; }
+}

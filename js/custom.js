@@ -951,4 +951,26 @@ if (mapWrap.length) {
 		});
 	}
 
+	/* Gallery Filter Functionality */
+	$(document).ready(function() {
+		$('.filter-btn').on('click', function() {
+			// Remove active class from all buttons
+			$('.filter-btn').removeClass('active');
+			// Add active class to clicked button
+			$(this).addClass('active');
+
+			var filterValue = $(this).attr('data-filter');
+			
+			if (filterValue === '*') {
+				$('.gallery-item').show().addClass('active');
+			} else {
+				$('.gallery-item').hide().removeClass('active');
+				$(filterValue).show().addClass('active');
+			}
+		});
+
+		// Set first button as active on page load
+		$('.filter-btn:first').addClass('active');
+	});
+
 }
