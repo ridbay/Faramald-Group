@@ -86,7 +86,7 @@
     <!-- Main Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#index">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img src="img/faramald-logo2.png" alt="Faramald Farms Logo" height="50" class="navbar-logo">
             </a>
             
@@ -619,6 +619,38 @@
     </section>
     <!-- Our News Section End -->
 
+    <!-- Valuable Partners and Customers -->
+    <section class="partners-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-tag">Trusted by businesses and communities</span>
+                <h2>Our Valuable Partners and Customers</h2>
+            </div>
+
+            <div class="partner-grid">
+                <div class="partner-item">
+                    <span>Farm Cooperatives</span>
+                </div>
+                <div class="partner-item">
+                    <span>Retail Distributors</span>
+                </div>
+                <div class="partner-item">
+                    <span>Hotels & Restaurants</span>
+                </div>
+                <div class="partner-item">
+                    <span>Food Processors</span>
+                </div>
+                <div class="partner-item">
+                    <span>Export Buyers</span>
+                </div>
+                <div class="partner-item">
+                    <span>Institutional Buyers</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Valuable Partners and Customers End -->
+
     <!-- FAQ Section -->
     <section id="faq" class="faq-section py-5">
         <div class="container">
@@ -739,6 +771,23 @@
     <!-- custom Js -->
     <script src="js/custom.js" type="text/javascript"></script>
     <script src="js/hots_popup.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(function (item) {
+                item.addEventListener('toggle', function () {
+                    if (!item.open) return;
+
+                    faqItems.forEach(function (otherItem) {
+                        if (otherItem !== item) {
+                            otherItem.removeAttribute('open');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 
 </body>
 

@@ -4141,6 +4141,70 @@ p.lead {
 
 /*-------------------------------------------------------------------------------------------*/
 
+.partners-section {
+    background: linear-gradient(135deg, #f4f9f2 0%, #edf7ee 100%);
+    border-top: 1px solid rgba(21, 92, 53, 0.08);
+    border-bottom: 1px solid rgba(21, 92, 53, 0.08);
+}
+
+.partners-section .section-header {
+    margin-bottom: 45px;
+}
+
+.partners-section .section-tag {
+    display: inline-block;
+    background: rgba(0, 122, 51, 0.08);
+    color: #0d5b30;
+    border: 1px solid rgba(0, 122, 51, 0.12);
+    border-radius: 999px;
+    padding: 8px 18px;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.partners-section h2 {
+    margin: 0;
+    color: #153f2d;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+.partner-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.partner-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    background: #ffffff;
+    border: 1px solid rgba(21, 92, 53, 0.12);
+    border-radius: 18px;
+    padding: 20px 18px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(17, 52, 34, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.partner-item span {
+    color: #204e39;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.partner-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 36px rgba(17, 52, 34, 0.12);
+    border-color: rgba(0, 122, 51, 0.2);
+}
+
 .logo-group {
     overflow: hidden;
     padding: 0;
@@ -4164,15 +4228,29 @@ p.lead {
     margin: 0 auto;
 }
 
+@media only screen and (max-width: 991px) {
+    .partner-grid {
+        grid-template-columns: repeat(3, minmax(150px, 1fr));
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .logo-group li {
         width: 50%;
+    }
+
+    .partner-grid {
+        grid-template-columns: repeat(2, minmax(140px, 1fr));
     }
 }
 
 @media only screen and (max-width: 500px) {
     .logo-group li {
         width: 100%;
+    }
+
+    .partner-grid {
+        grid-template-columns: 1fr;
     }
 }
 

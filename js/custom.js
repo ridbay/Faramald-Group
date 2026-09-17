@@ -77,8 +77,9 @@ $(document).ready(function() {
 		$('.popup-btn');
 		popup_btn.magnificPopup({
 			type : 'image',
+			closeOnContentClick : true,
 			gallery : {
-				enabled : true
+				enabled : false
 			}
 		});
 	}
