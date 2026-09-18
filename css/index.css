@@ -563,3 +563,8 @@ p.blue_text__block {
 	}
 }
 
+.news-image video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
